@@ -88,3 +88,14 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.Ian {
+    border: darkred 15px solid;
+    background-color: rgb(163, 162, 162);
+}
+
+.Khayman {
+    border: green 4px dotted;
+}
+.hidden {
+    display: none}
