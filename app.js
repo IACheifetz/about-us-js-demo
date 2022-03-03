@@ -24,8 +24,7 @@ selectEl.addEventListener('change', (event) => {
     const selected = event.target.value;
     
     hobbiesEl.innerHTML = '';
-    contain.classList.remove('Khayman', 'Ian');
-
+    contain.classList.remove('Khayman', 'Ian', 'hidden');
     if (selected === 'one') {
         renderPerson(0);
     } else {
