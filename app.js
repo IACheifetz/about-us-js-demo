@@ -19,9 +19,22 @@ const hobbiesEl = document.querySelector('.hobbies');
 // const contain = document.querySelector('div');
 
 // set event listeners 
-selectEl.addEventListener('change', (e) => {
+selectEl.addEventListener('change', (event) => {
     console.log('user click');
+    const selected = event.target.value;
+    
+    hobbiesEl.innerHTML = '';
+    contain.classList.remove('Khayman', 'Ian');
+
+    if (selected === 'one') {
+        renderPerson(0);
+    } else {
+        renderPerson(1);
+    }
+
 });
+
+
     // get user input
 function renderPerson(index) {
     contain.classList.add(`${people[index].name}`);
@@ -35,6 +48,10 @@ function renderPerson(index) {
         hobbiesEl.appendChild(li);
     }
 }
+
+
+
+
 console.log(pronounsEl);
     // use user input to update state 
 
